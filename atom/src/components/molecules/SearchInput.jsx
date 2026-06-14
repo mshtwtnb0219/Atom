@@ -2,8 +2,9 @@ import { PrimaryButton } from "../atoms/button/PrimaryBurron";
 
 import styled from "styled-components";
 import { Input } from "../atoms/input/Input";
+import { memo } from "react";
 
-export const SearchInput = () => {
+export const SearchInput = memo(() => {
   return (
     <>
       <SContainer>
@@ -14,7 +15,7 @@ export const SearchInput = () => {
       </SContainer>
     </>
   );
-};
+});
 
 const SContainer = styled.div`
   display: flex;

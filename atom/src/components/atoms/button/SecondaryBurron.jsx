@@ -3,8 +3,8 @@ import { BaseButton } from "./BaseButton";
 
 // 画面の主要のボタン
 export const SecondaryButton = (props) => {
-  const { children } = props;
-  return <SButton>{children}</SButton>;
+  const { children , onClick} = props;
+  return <SButton onClick={onClick}>{children}</SButton>;
 };
 
 const SButton = styled(BaseButton)`
