@@ -1,9 +1,16 @@
 name: Hello World
 
+# ワークフローの実行条件(トリガー)
 on: 
-  workflow_dispatch:
+# ：手動実行
+  # workflow_dispatch:
+  push:
+    branches:
+      - main
 
+# ジョブ定義
 jobs:
+# ジョブ名
   say_hello:
     runs-on: ubuntu-latest
     steps:
